@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(Inter-VariableFont_slnt,wght.ttf);
+}
+
+@font-face {
+    font-family: homemade;
+    src: url(HomemadeApple-Regular.ttf);
+}
+
+
+/*HEADER*/
+#nav_laptop{
+    display: flex;
+    justify-content: flex-end;
+
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    
+    z-index: 0;
+    position: relative;
+}
+
+
+#nav_laptop div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    background-color: #CB2525;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    position: absolute;
+    margin-right: 88%;
+}
+
+#stot {
+    font-family: homemade;
+    color: #CB2525;
+    font-size: larger;
+
+    margin-left: 10%;
+}
+
+#stot:hover {
+    color: black;
+}
+
+/*PØLSESIDER*/
+
+main{
+    overflow-x: hidden;
+    display: flex;
+}
+
+section {
+    min-width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indhold{
+    position: relative;
+    bottom: 15%;
+}  
+
+#forside{
+    position: relative;
+    bottom: 28%;
+}
+
+.karusel {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    margin-top: 2%;
+}
+
+#hus {
+    width: 30%;
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 5%;
+    display: none;
+}
+
+#gif{
+    margin-top: 5%;
+    width: 50%;
+}
+
+#pil {
+    width: 120px;
+    height: 70px;
+    background-color: #CB2525;
+
+    margin-bottom: 10%;
+}
+
+.overskrift {
+    position: absolute;
+    z-index: 4;
+    margin-bottom: 50%;
+}
+
+/*MENUSIDER*/
+
+
+/*FONTE*/
+
+/*overskrifter*/
+
+h1 {
+    color: #CB2525;
+    font-family: homemade;
+    font-size: xx-large;
+    text-align: center; 
+    line-height: 42px;
+}
+
+.overskrift p {
+    color: black;
+    font-family: inter;
+    font-weight: lighter;
+    text-align: center;
+
+    margin-top: 2%;
+}
+
+h2 {
+    color: #CB2525;
+    font-family: homemade;
+    font-size: large;
+    text-align: center; 
+}
+
+/*navigations menu*/
+
+a {
+    color: black;
+    font-family: inter;
+    font-weight: lighter;
+    white-space: nowrap
+}
+
+#aktuelleside {
+    color: #CB2525;
+    font-weight: bold;
+}
+
+#nav{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;    
+    position: relative;
+    top: 50%;
+    right: 40%;
+    bottom: 10%;
+}
+
+a:hover{
+    color: #CB2525;
+}
+
+/*menukort*/
+
+.menukort p {
+    font-family: inter;
+    color:#CB2525;
+}
+
+/*pile*/
+
+.guide {
+    color: #CB2525;
+    margin-top: 2%;
+    font-size: x-small;
+    font-family: inter;
+    font-weight: lighter;
+}
+
+.menu_guide {
+    position: relative;
+    bottom: 30%;
+    left: 40%
+}
+
+.menu_guide p {
+    color: #CB2525;
+    font-size: x-small;
+    font-family: inter;
+    font-weight: lighter;
+}
+
+
+
