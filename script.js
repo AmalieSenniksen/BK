@@ -15,3 +15,5 @@ setTimeout(function() {
   pladsen.style.display = "block";
 }, 4500); 
 
+/* Pølserækken vises langsomt */
+

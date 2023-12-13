@@ -10,9 +10,17 @@
 }
 
 @font-face {
-    font-family: homemade;
-    src: url(HomemadeApple-Regular.ttf);
+    font-family: DM;
+    src: url(DMSerifDisplay-Regular.ttf);
 }
+
+body#polse_sider{
+    background-image: url(images/tekstur.png);
+}
+
+/*body{
+    background-color: #F1EEE8;
+}*/
 
 
 /*HEADER*/
@@ -22,10 +30,10 @@
 
     padding-left: 3%;
     padding-right: 3%;
-    margin-bottom: 5%;
-    margin-top: 2%;
+    margin-bottom: 100px;
+    padding-top: 20px;
     
-    z-index: 0;
+    z-index: 5;
     position: relative;
 }
 
@@ -37,19 +45,20 @@
 }
 
 #logo{
-    background-color: #CB2525;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     z-index: 1;
     position: absolute;
-    margin-right: 88%;
+    margin-right: 83%;
 }
 
 #stot {
-    font-family: homemade;
+    font-family: DM;
+    letter-spacing: 2px;
     color: #CB2525;
     font-size: larger;
-
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
     margin-left: 10%;
 }
 
@@ -58,10 +67,18 @@
 }
 
 /*PØLSESIDER*/
-
 main{
     overflow-x: hidden;
     display: flex;
+}
+
+#forside{
+    position: relative;
+    bottom: 67vh;
+}
+
+#forside #nav{
+    margin-top: 30px;
 }
 
 section {
@@ -76,50 +93,251 @@ section {
 
 .indhold{
     position: relative;
-    bottom: 15%;
+    bottom: 30vh;
 }  
 
-#forside{
-    position: relative;
-    bottom: 28%;
-}
-
-.karusel {
-    width: 50%;
-    height: 50%;
-    background-color: black;
-    margin-top: 2%;
-}
-
 #hus {
-    width: 30%;
+    width: 30vw;
     position: absolute;
     z-index: 2;
-    margin-bottom: 5%;
+    margin-bottom: 300px;
     display: none;
 }
 
 #gif{
-    margin-top: 5%;
-    width: 50%;
+    margin-top: 350px;
 }
 
-#pil {
-    width: 120px;
-    height: 70px;
-    background-color: #CB2525;
-
-    margin-bottom: 10%;
+#polsegif{
+    position: absolute;
+    z-index: 4;
+    top: 2px;
 }
 
 .overskrift {
     position: absolute;
-    z-index: 4;
-    margin-bottom: 50%;
+    top: 0;
+    margin-top: 80px;
+    z-index: 5;
+}
+
+#tider {
+    text-align: left;
+    position: absolute;
+    z-index: 6;
+    margin-left: 48%;
+    margin-top: 600px;
+}
+
+#forpagter { /*placeringen af forpagter navn + tlf*/
+    text-align: right;
+    position: absolute;
+    z-index: 5;
+    margin-top: 850px;
+    margin-left: 15%;
+    color:#013789;
 }
 
 /*MENUSIDER*/
 
+#menu {
+    z-index: 0;
+    position: relative;
+}
+
+#polsemenu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+}
+
+#polsemenu p{
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 30px;
+}
+
+#polsemenu h2{
+    z-index: 3;
+    position: absolute;
+    padding-top: 3px;
+}
+
+#venstre_menukort{
+    margin-right: 50%;
+    position: absolute;
+    z-index: 1;
+    top:0;
+    padding-top: 80px;
+}
+
+#hojre_menukort {
+    margin-left: 50%;
+    position: absolute;
+    z-index: 1;
+    top:0;
+    padding-top: 120px;
+}
+
+#season{
+    position: relative;
+    z-index: 5;
+    bottom:0;
+    margin-top: 150px;
+}
+
+/* HVEM ER VI SIDEN */
+
+#baggrund{
+    z-index: 3;
+    top: 0;
+    position: absolute;
+    opacity: 0.5;
+    width: 100vw;
+}
+
+#hvem_overskrift {
+    width: 100vw;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    margin-top: 200px;
+}
+
+#hvem_overskrift p {
+    text-align: center;
+    font-size: large;
+}
+
+#forpagter_tekst {
+    text-align: left;
+    font-size: large;
+    position: absolute;
+    z-index: 3;
+    margin-left: 30%;
+    margin-top: 50%;
+}
+
+#billede {
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    margin-top: 1150px;
+    margin-left: 10%;
+}
+
+#historie_tekst {
+    text-align: left;
+    font-size: large;
+    position: absolute;
+    z-index: 3;
+    margin-left: 50%;
+    margin-top: 70%;
+}
+
+#detbetydernoget {
+    width: 100vw;
+    position: absolute;
+    z-index: 4;
+    text-align: center;
+    margin-top: 1810px;
+}
+
+#detbetydernoget p{
+    font-size: larger;
+}
+
+/*pølserækken*/
+#polseraekke{
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    z-index: 0;
+}
+
+#kasse{
+    width: 100%;
+    height: 1000px;
+    background-color: #ffffff;
+    position: fixed;
+    top:0px;
+    margin-top: 20%;
+    z-index: 1;
+}
+
+/*STØT HER SIDEN*/
+#indhold_stot {
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    z-index: 0;
+    top:0;
+
+}
+
+#indhold_stot p{
+    font-size: large;
+}
+
+#hjerte {
+    position: relative;
+    z-index: 1;
+}
+
+#hvid {
+    position: absolute;
+    z-index: 2;
+
+    font-weight: normal;
+    color: white;
+    font-size: small;
+    
+    width: 100vw;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#stot_h2 {
+    font-family: DM;
+    color: #ffffff;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    font-size:xx-large;
+
+    width: 100vw;
+    text-align: center;
+    margin-top: -50px;
+
+    position: absolute;
+    z-index: 2;
+}
+
+#hvid2 {
+    position: absolute;
+    z-index: 2;
+
+    font-weight: normal;
+    color: white;
+    font-size: small;
+    
+    width: 100vw;
+    margin-top: -150px;
+    text-align: center;
+}
+
+#link {
+    text-align: right;
+}
+
+#link a{
+    font-weight: bold;
+}
 
 /*FONTE*/
 
@@ -127,84 +345,120 @@ section {
 
 h1 {
     color: #CB2525;
-    font-family: homemade;
+    font-family: DM;
+    letter-spacing: 5px;
     font-size: xx-large;
     text-align: center; 
     line-height: 42px;
-}
-
-.overskrift p {
-    color: black;
-    font-family: inter;
-    font-weight: lighter;
-    text-align: center;
-
-    margin-top: 2%;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
 }
 
 h2 {
     color: #CB2525;
-    font-family: homemade;
+    font-family: DM;
+    letter-spacing: 5px;
     font-size: large;
     text-align: center; 
+    line-height: 20px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.specialitet{
+    color: #013789;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+#tid {
+    text-align: left;
+}
+
+p {
+    color: #013789;
+    font-family: inter;
+    font-weight: lighter;
+    font-size: small;
 }
 
 /*navigations menu*/
 
 a {
-    color: black;
+    color: #013789;
     font-family: inter;
     font-weight: lighter;
     white-space: nowrap
-}
-
-#aktuelleside {
-    color: #CB2525;
-    font-weight: bold;
-}
-
-#nav{
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;    
-    position: relative;
-    top: 50%;
-    right: 40%;
-    bottom: 10%;
 }
 
 a:hover{
     color: #CB2525;
 }
 
+#aktuelleside {
+    color: #CB2525;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black; 
+}
+
+#nav{
+    font-size: large;  
+    position: relative;
+    top: 600px;
+    right: 40%;
+    bottom: 100px;
+}
+
+#maps{
+    font-family: DM;
+    letter-spacing: 2px;
+    font-size: large;
+    color: #013789;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black; 
+
+    position: relative;
+    margin-right: 25%;
+    margin-bottom: -300px;
+    padding-top: 50px;
+    z-index: 6;
+
+}
+
+#maps:hover{
+    color:#CB2525;
+}
+
+#lilletorv{
+    opacity: 0;
+}
+
 /*menukort*/
 
-.menukort p {
+#menu p {
     font-family: inter;
+    font-weight: lighter;
     color:#CB2525;
 }
 
 /*pile*/
 
-.guide {
+/*.guide {
     color: #CB2525;
     margin-top: 2%;
     font-size: x-small;
     font-family: inter;
     font-weight: lighter;
-}
+}*/
 
 .menu_guide {
     position: relative;
-    bottom: 30%;
+    bottom: 250px;
     left: 40%
 }
 
-.menu_guide p {
-    color: #CB2525;
-    font-size: x-small;
-    font-family: inter;
-    font-weight: lighter;
-}
+
 
 
 
