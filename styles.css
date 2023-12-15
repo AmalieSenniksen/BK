@@ -15,41 +15,51 @@
 }
 
 body#polse_sider{
-    background-image: url(images/tekstur.png);
+    background-color: #FFFDF6;
 }
 
-/*body{
-    background-color: #F1EEE8;
-}*/
+body{
+    background-color: #FFFDF6;
+}
 
 
-/*HEADER*/
+
+/*HEADER_____________________________________________________________*/
+
 #nav_laptop{
-    display: flex;
-    justify-content: flex-end;
-
-    padding-left: 3%;
-    padding-right: 3%;
-    margin-bottom: 100px;
-    padding-top: 20px;
-    
-    z-index: 5;
-    position: relative;
+    text-align: right;
+    top:0;
 }
 
+header  {position: fixed;
+        width: 100%;
+        z-index: 7;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;}
 
-#nav_laptop div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#header2    {display: flex;
+            margin-top: 5vh;}
+
+#header2 a {margin-right: 2vw;}
+#header2 img {width: 4vw;}
+#hvemervi{margin-top: 2vh;} 
+
+
+#to_undersider {
+    position: absolute;
+    z-index: 7;
+    background-color: pink;
+    position: relative;
+    top:0;
+    margin-bottom: -10%;
 }
 
 #logo{
-    width: 150px;
-    height: 150px;
-    z-index: 1;
-    position: absolute;
-    margin-right: 83%;
+    z-index: 8;
+    position: relative;
+    width: 8vw;
+    margin: 2vw;
 }
 
 #stot {
@@ -66,19 +76,68 @@ body#polse_sider{
     color: black;
 }
 
-/*PØLSESIDER*/
+/* BURGERMENU____________________________________________________*/
+
+#burgermenudiv  {position: absolute;
+                z-index: 7;
+                top:0;
+                width: 100vw;
+                height: 100vh;
+                display: none;}
+
+#burgermenu-indhold     {background-color: white;
+                        padding: 10%;
+                        height: 100vh;
+                        width: 100%;}
+
+#burgermenu img{
+    float: right;
+    padding-top: 3.5%;
+    width: 5vw;
+    margin: 5%;
+   }
+   
+#burgerkryds img{
+    float: right;
+    padding-top: 3.5%;
+    width: 5vw;
+    margin: 5%;
+    position: relative;
+   }
+
+#nav_menu{
+    display: none;
+    height: 100vh;
+}
+   
+#burgerkryds {
+       display: none;
+   }
+
+   #burgermenudiv a{
+    color: #CB2525;
+   }
+
+   .stor {
+    padding-top: 20%;
+    font-size: larger;
+    color: #CB2525;
+    font-family: DM;
+   }
+
+
+/*PØLSESIDER_____________________________________________________________*/
+#forside-gif {
+    position: relative;
+    z-index: 5;
+    margin-bottom: 13vh;
+ }
+
 main{
     overflow-x: hidden;
     display: flex;
-}
-
-#forside{
-    position: relative;
-    bottom: 67vh;
-}
-
-#forside #nav{
-    margin-top: 30px;
+    height: 100vh;
+    align-items: center;
 }
 
 section {
@@ -93,52 +152,60 @@ section {
 
 .indhold{
     position: relative;
-    bottom: 30vh;
+    padding-top: 10vh;
 }  
 
 #hus {
     width: 30vw;
     position: absolute;
-    z-index: 2;
-    margin-bottom: 300px;
+    z-index: 6;
     display: none;
-}
 
-#gif{
-    margin-top: 350px;
 }
 
 #polsegif{
     position: absolute;
     z-index: 4;
-    top: 2px;
+    width: 100vw;
+
 }
 
 .overskrift {
     position: absolute;
     top: 0;
-    margin-top: 80px;
+    margin-top: 10vh;
     z-index: 5;
+}
+
+#overskrift_forside {
+    position: relative;
+    z-index: 5;
+}
+
+#gif {
+   margin-top: 10vh;
+   position: relative;
+   z-index: 5;
 }
 
 #tider {
     text-align: left;
     position: absolute;
     z-index: 6;
-    margin-left: 48%;
-    margin-top: 600px;
+    margin-left: 50vw;
+    margin-top: 60vh;
 }
 
 #forpagter { /*placeringen af forpagter navn + tlf*/
     text-align: right;
     position: absolute;
     z-index: 5;
-    margin-top: 850px;
     margin-left: 15%;
+    margin-top: 73vh;
     color:#013789;
 }
 
-/*MENUSIDER*/
+/*MENUSIDER_____________________________________________________________*/
 
 #menu {
     z-index: 0;
@@ -191,7 +258,8 @@ section {
     margin-top: 150px;
 }
 
-/* HVEM ER VI SIDEN */
+/* HVEM ER VI SIDEN_____________________________________________________________*/
+
 
 #baggrund{
     z-index: 3;
@@ -201,26 +269,25 @@ section {
     width: 100vw;
 }
 
+
 #hvem_overskrift {
     width: 100vw;
     position: absolute;
     z-index: 3;
     text-align: center;
-    margin-top: 200px;
 }
 
 #hvem_overskrift p {
     text-align: center;
-    font-size: large;
 }
 
 #forpagter_tekst {
     text-align: left;
-    font-size: large;
     position: absolute;
     z-index: 3;
-    margin-left: 30%;
-    margin-top: 50%;
+    margin-top: 150vh;
+    padding-left: 12vw;
+    font-size: 1.6vw;
 }
 
 #billede {
@@ -228,50 +295,72 @@ section {
     text-align: center;
     position: absolute;
     z-index: 3;
-    margin-top: 1150px;
-    margin-left: 10%;
+    margin-top: 280vh;
+    padding-left: 30vw;
 }
+
+#billede img {width: 35vw;}
 
 #historie_tekst {
     text-align: left;
-    font-size: large;
     position: absolute;
     z-index: 3;
-    margin-left: 50%;
-    margin-top: 70%;
+    margin-top: 200vh;
+    padding-left: 40vw;
+    font-size: 1.6vw;
 }
+
 
 #detbetydernoget {
     width: 100vw;
     position: absolute;
     z-index: 4;
     text-align: center;
-    margin-top: 1810px;
+    margin-top: 400vh;
+    padding: 20vw;
 }
 
-#detbetydernoget p{
-    font-size: larger;
-}
+#detbetydernoget h1 {font-size: 4vw;
+                    line-height: 10vh;}
 
-/*pølserækken*/
+#vildu  {width: 100vw;
+        position: absolute;
+        z-index: 4;
+        text-align: center;
+        margin-top: 500vh;}
+
+#vildu p a {font-weight: bold;}
+
+#kontakter  {display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            width: 100vw;
+            position: absolute;
+            z-index: 4;
+            text-align: center;
+            margin-top: 550vh;}
+
+/*Pølserækken_____________________________________________________________*/
+
 #polseraekke{
-    width: 80%;
-    left: 10%;
+    width: auto;
     position: absolute;
     z-index: 0;
+    overflow: hidden;
+    height: 645vh;
+    background-color: #FFFDF6;
 }
 
 #kasse{
     width: 100%;
     height: 1000px;
-    background-color: #ffffff;
+    background-color: #FFFDF6;
     position: fixed;
-    top:0px;
     margin-top: 20%;
     z-index: 1;
 }
 
-/*STØT HER SIDEN*/
+/*STØT HER SIDEN_____________________________________________________________*/
 #indhold_stot {
     width: 100vw;
     text-align: center;
@@ -339,18 +428,17 @@ section {
     font-weight: bold;
 }
 
-/*FONTE*/
+/*FONT og OVERSKRIFTER_____________________________________________________*/
 
-/*overskrifter*/
 
 h1 {
     color: #CB2525;
     font-family: DM;
     letter-spacing: 5px;
-    font-size: xx-large;
+    font-size: 2.5vw;
     text-align: center; 
     line-height: 42px;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: black;
 }
 
@@ -361,13 +449,13 @@ h2 {
     font-size: large;
     text-align: center; 
     line-height: 20px;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: black;
 }
 
 .specialitet{
     color: #013789;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: black;
 }
 
@@ -379,10 +467,10 @@ p {
     color: #013789;
     font-family: inter;
     font-weight: lighter;
-    font-size: small;
+    font-size: 1vw;
 }
 
-/*navigations menu*/
+/*navigations menu_____________________________________________________________*/
 
 a {
     color: #013789;
@@ -405,9 +493,14 @@ a:hover{
 #nav{
     font-size: large;  
     position: relative;
-    top: 600px;
-    right: 40%;
-    bottom: 100px;
+    top: 45vh;
+    right: 35%;
+}
+
+.findvej_gif_vogn{
+    z-index: 5;
+    position: relative;
+    align-items: center;
 }
 
 #maps{
@@ -419,11 +512,12 @@ a:hover{
     -webkit-text-stroke-color: black; 
 
     position: relative;
+    padding-top: 50px;
     margin-right: 25%;
     margin-bottom: -300px;
-    padding-top: 50px;
+    /*padding-bottom: 10px;*/
     z-index: 6;
-
+    margin-top: 14vh;
 }
 
 #maps:hover{
@@ -434,7 +528,9 @@ a:hover{
     opacity: 0;
 }
 
-/*menukort*/
+/*Menukort _____________________________________________________________*/
+
+#menu{margin-top: 40vh;}
 
 #menu p {
     font-family: inter;
@@ -458,7 +554,182 @@ a:hover{
     left: 40%
 }
 
+.menu_guide img {width: 12vw;}
+
+/*MOBIL*/
+#mobil_indhold{
+    margin: auto;
+}
+
+#mobil_indhold p{
+    color: #CB2525;
+}
+
+#mobil_indhold h1{
+    color: #CB2525;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+
+#maps_mobil{
+    font-family: DM;
+    letter-spacing: 2px;
+    font-size: large;
+    color: #013789;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black; 
+}
+
+#maps_mobil:hover{
+    color:#CB2525;
+}
+
+#tider_mobil{
+    text-align: left;
+    position: absolute;
+}
+
+#forpagter_mobil{
+    text-align: center;
+
+}
+
+#tid p {
+    color: #013789;
+}
+
+#specialitet_mobil{
+    color: #013789;
+}
+
+#info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+/* HER STYLES MEDIA QUERY ________________________________________*/
+
+
+/* MEDIUM SKÆRM */
+
+@media screen and (max-width:1175px){
+    #nav{
+        display: none;
+    }
+
+    #burgermenudiv{
+        display: block;
+    }
+
+    #header2{display: none;}
+
+    #forside img{
+        top: 450px;
+        width: 50%;
+    }
+
+    #logo{
+        width: 12vw;
+    }
+
+    header #to_undersider{
+        display: none;
+    }
+    
+
+/* HVEM ER VI SIDEN_____________________________________________________________*/
+
+
+#forpagter_tekst    {margin-top: 100vh;
+                    font-size: 2vw;}
+
+#billede {margin-top: 240vh;}
+
+#billede img {width: 40vw;}
+
+#historie_tekst     {margin-top: 160vh;
+                    font-size: 2vw;}
+
+
+#detbetydernoget {margin-top: 350vh;}
+
+#detbetydernoget h1 {font-size: 3vw;}
+
+#vildu  {margin-top: 460vh;}
+
+#kontakter  {margin-top: 500vh;}}
+
+/* LILLE SKÆRM */
+
+@media screen and (max-width:768px){
+    #logo{
+        margin-right: 83%;
+    }
+
+    h1{
+        letter-spacing: 2px;
+        line-height: 32px;
+    }
+
+    h2{
+        letter-spacing: 2px;
+        font-size: 15pt;
+    }
+
+    #forside img{
+        top: 400px;
+        width: 80%;
+    }
+
+    #eller_bare_kob{
+        letter-spacing: 1px;
+        font-size: medium;
+        line-height: 22px;
+    }
+
+    #indhold_stot p{
+        font-size: smaller;
+    }
+
+    #stot_h2{
+        font-size: 5vw;
+    }
+
+p {font-size: 2vw;}
 
 
 
+    /* HVEM ER VI SIDEN_____________________________________________________________*/
 
+#polsegif{top: 10vh;}
+#hvem_overskrift{top: 22vh;}
+
+#forpagter_tekst    {margin-top: 40vh;
+                    font-size: 3vw;}
+
+#billede {margin-top: 160vh;}
+
+#billede img {width: 40vw;}
+
+#historie_tekst     {margin-top: 100vh;
+                    font-size: 3vw;}
+
+
+#detbetydernoget {margin-top: 220vh;}
+
+#detbetydernoget h1 {font-size: 4vw;
+                    line-height: 4vh;}
+
+#vildu  {margin-top: 300vh;}
+
+#kontakter  {margin-top: 315vh;}}
+
+
+#polseraekke{
+    overflow: hidden;
+    height: 400vh;
+}
