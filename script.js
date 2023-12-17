@@ -31,6 +31,8 @@ krop.onscroll = flytFirkant;
 
 //BURGERMENU 
 
+/* Lukke  */
+
 /* Åbne */
 function visMenu() {
   document.getElementById("nav_menu").style.display = "block";
@@ -41,7 +43,6 @@ function visMenu() {
 
 document.getElementById("burgermenu").onclick= visMenu;
 
-/* Lukke  */
 function gemMenu() {
   document.getElementById("nav_menu").style.display = "none";
   document.getElementById("burgerkryds").style.display = "none";
