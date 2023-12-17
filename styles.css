@@ -183,8 +183,12 @@ section {
     top: 0;
     margin-top: 10vh;
     z-index: 5;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    text-align: center;
 }
 
+.overskrift p {font-size: 1.3vw;}
 
 #overskrift_forside {
     position: relative;
@@ -543,7 +547,7 @@ a:hover{
 /*MOBIL*/
 #mobil_indhold{
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 #mobil_indhold p{
@@ -579,7 +583,6 @@ a:hover{
 
 #forpagter_mobil{
     text-align: center;
-
 }
 
 #tid p {
@@ -617,8 +620,8 @@ a:hover{
     margin-right: 4vw;
     width: 7vw;}
 
-.overskrift h1 {font-size: 4vw;
-                padding-top: 10vh;}
+.overskrift h1 {font-size: 3.5vw;
+                padding-top: 7vh;}
 
     #nav{
         display: none;
@@ -674,6 +677,8 @@ a:hover{
         font-size: 3vw;
         font-weight: 200;}
 
+#indhold_stot{margin-top: 10vh;}
+
 #indhold_stot div h1{font-size: 5vw;
                     padding-left: 10vw;
                     padding-right: 10vw;}
@@ -695,7 +700,13 @@ a:hover{
     margin-right: 4vw;
     width: 14vw;}
 
-.overskrift h1 {font-size: 8vw;}
+.overskrift h1 {font-size: 7vw;
+                line-height: 5vh;}
+
+.overskrift p {font-size: 3vw;}
+
+.overskrift {padding-left: 20vw;
+            padding-right: 20vw;}
 
 
     h1{
