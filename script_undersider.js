@@ -1,3 +1,5 @@
+/* MARIE, ALMA, NINA & AMALIE */
+
 /* Pølserækken vises langsomt */
 
 const krop = document.querySelector("body");

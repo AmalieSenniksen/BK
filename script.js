@@ -1,3 +1,5 @@
+/* MARIE, ALMA, NINA & AMALIE */
+
 //scroll effekt der gør at man kan swipe menuen frem for hver pølsevogn
 
 const scrollContainer = document.querySelector('main');
